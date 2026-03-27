@@ -66,7 +66,7 @@ p {
 /* --- header --- */
 
 header {
-    padding-block: 28px;
+    border-bottom: 1px solid #e7e9fc;
 }
 
 .header-logo {
@@ -78,6 +78,7 @@ header {
     text-transform: uppercase;
     color: #2e2f42;
     margin-right: 76px;
+    padding-block: 28px;
 }
 
 
@@ -104,6 +105,7 @@ header {
 .header-list {
     display: flex;
     gap: 40px;
+    padding-block: 28px;
 }
 
 .header-item {}
@@ -114,6 +116,7 @@ header {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding-block: 28px;
 }
 
 .header-address {}
@@ -139,7 +142,6 @@ header {
 .hero {
     background: #2e2f42;
     padding-block: 188px;
-    padding-inline: 472px;
 }
 
 .hero-title {
@@ -181,7 +183,7 @@ header {
 
 .features-list {
     display: flex;
-    gap: 24px;
+    gap: 8px 24px;
 }
 
 .features-item {
@@ -217,17 +219,18 @@ header {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 72px;
 }
 
 .team-list {
     display: flex;
-    margin-top: 72px;
     gap: 24px;
 }
 
 .team-item {
     background: #fff;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    border-radius: 0 0 4px 4px
 }
 
 .team-item-subtitle {
@@ -237,7 +240,6 @@ header {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    margin-top: 32px;
     margin-bottom: 8px;
 }
 
@@ -247,10 +249,15 @@ header {
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
-    margin-bottom: 32px;
 }
 
-.team-image {}
+.team-item-content {
+    padding: 32px 16px ;
+}
+
+.team-image {
+    display: block
+}
 
 
 /* --- portfolio --- */
@@ -272,10 +279,12 @@ header {
     display: flex;
     flex-wrap: wrap;
     gap: 48px 24px;
+    margin-top: 72px;
 }
 
 .portfolio-item {
     background: #fff;
+    width: calc((100% - 24px * 2) / 3);
 }
 
 .portfolio-item-content {
@@ -283,13 +292,11 @@ header {
     border-left: 1px solid #e7e9fc;
     border-right: 1px solid #e7e9fc;
     padding: 32px 16px;
-    width: 360px;
-    height: 120px;
     padding: 32px 16px;
 }
 
 .portfolio-image {
-
+    display: block
 }
 
 .portfolio-item-title {
