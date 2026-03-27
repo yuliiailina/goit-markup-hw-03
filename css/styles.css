@@ -78,6 +78,7 @@ header {
     text-transform: uppercase;
     color: #2e2f42;
     margin-right: 76px;
+    padding-block: 24px;
 }
 
 
@@ -99,7 +100,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-block: 24px;
 }
 
 .header-list {
@@ -115,6 +115,8 @@ header {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    display: block;
+    padding-block: 24px;
 }
 
 .header-address {}
@@ -229,7 +231,7 @@ header {
 .team-item {
     background: #fff;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    border-radius: 0 0 4px 4px
+    border-radius: 0 0 4px 4px;
     width: calc((100% - 24px * 3) / 4);
 }
 
@@ -256,7 +258,7 @@ header {
 }
 
 .team-image {
-    display: block
+    display: block;
 }
 
 
@@ -296,7 +298,7 @@ header {
 }
 
 .portfolio-image {
-    display: block
+    display: block;
 }
 
 .portfolio-item-title {
