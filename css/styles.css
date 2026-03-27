@@ -78,7 +78,6 @@ header {
     text-transform: uppercase;
     color: #2e2f42;
     margin-right: 76px;
-    padding-block: 28px;
 }
 
 
@@ -96,10 +95,11 @@ header {
     display: flex;
 }
 
-.header-cont {
+.header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-block: 24px;
 }
 
 .header-list {
@@ -115,7 +115,6 @@ header {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    padding-block: 24px;
 }
 
 .header-address {}
@@ -185,7 +184,9 @@ header {
     gap: 24px;
 }
 
-.features-item {}
+.features-item {
+    width: calc((100% - 24px * 3) / 4);
+}
 
 .features-item-subtitle {
     font-weight: 500;
@@ -229,6 +230,7 @@ header {
     background: #fff;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     border-radius: 0 0 4px 4px
+    width: calc((100% - 24px * 3) / 4);
 }
 
 .team-item-subtitle {
